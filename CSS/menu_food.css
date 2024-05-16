@@ -1,0 +1,568 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&display=swap');
+/* Общие */
+html{
+    scroll-behavior: smooth;
+}
+body{
+    box-sizing: border-box;
+    min-height: 100vh;
+    margin: 0;
+    font-family: "Cormorant", serif;
+    color: #ffffff;
+    background-color: #000000;
+
+}
+
+a{
+    color:#ffffff;
+    text-decoration: none;
+}
+p{
+    margin: 0;
+}
+
+ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+img{
+    max-width: 100%;
+}
+
+.container{
+    max-width: 1060px;
+    margin: 0 auto;
+}
+
+.page_name{
+    margin-top: 34px;
+    margin-bottom: 34px;
+    text-align: center;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+
+}
+
+
+/* header */
+.header {
+    padding-top: 32px;
+   
+}
+.header .container{
+    max-width: 860px;
+    padding-left: 116px;
+    padding-right: 84px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__nav {
+
+}
+
+.header__nav a {
+    font-weight: 500;
+    font-size: 32px;
+    padding: 7px 7px;
+}
+
+.header__nav a:hover{
+    color: #4D7A77;
+}
+
+.header__list {
+    display: flex;
+    gap: 21px;
+}
+
+.logo {
+
+}
+.logo:hover{
+
+}
+
+.header__logo {
+
+}
+
+.header__logo:hover{
+    opacity: 0.8;
+}
+
+
+
+
+/* меню */
+
+.food {
+}
+
+.nav_bar {
+
+}
+.nav_bar .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.page_name {
+    width: 280px;
+
+}
+.page_name_bar {
+    margin-right: 105px;
+    opacity: 0.8;
+}
+.page_name_bar:hover{
+    opacity: 1;
+}
+.page_name_food {
+    opacity: 1;
+}
+.page_name_food:hover{
+    opacity: 0.8;
+}
+
+.navigation_food .container{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+
+}
+.nav_food {
+    width: 880px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 34px;
+}
+.food_link {
+
+
+    box-sizing: border-box;
+
+    width: 160px;
+    height: 61px;
+
+    border: 1px solid #FFFFFF;
+
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+
+    transition: .2s linear;
+
+}
+.food_link:hover{
+    box-shadow: rgba(77, 122, 119, 0.5) 0 0px 0px 40px inset;
+    
+}
+.food_link + .food_link_1{
+    width: 250px;
+}
+.nav_food1 {
+    width: 700px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 34px;
+}
+
+
+.food .container {
+
+    padding-top: 70px;
+    padding-bottom: 70px;
+    background: #D9D9D9;
+
+}
+
+.food_menu {
+    margin: 0 auto;
+    max-width: 700px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+
+}
+
+
+
+ .food_items{
+    width: 700px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+}
+
+
+.rectangle{
+    border: 2px solid #000000;
+    width: 920px;
+    height: 2712px;
+    margin-left: 70px;
+    margin-right: 70px;
+    padding-top: 34px;
+}
+
+.title_item {
+
+
+    font-family: 'Cormorant SC';
+    font-style: normal;
+    font-weight: 520;
+    font-size: 36px;
+    width: 700px;
+    text-align: center;
+    margin-bottom: 34px;
+    margin-top: 0;
+
+    color: #000000;
+
+
+}
+.text_price{
+    display: flex;
+    justify-content: space-between;
+    width: 700px;
+    align-items: center;
+    margin-bottom: 34px;
+}
+.items {
+
+}
+.text_item {
+
+    width: 610px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 39px;
+
+
+    color: #000000;
+
+
+
+}
+
+.price {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+
+
+
+    color: #000000;
+
+
+}
+
+
+
+/* footer */
+footer{
+    background-color: #4D7A77;
+    height: 35px;
+    margin-top: 70px;
+}
+
+footer .container {
+    max-width: 880px;
+    display: flex;
+    padding-top: 5px;
+    align-items: center;
+}
+
+.tel {
+
+
+
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    margin-right: 254px;
+
+
+
+
+
+}
+.tel:hover{
+    opacity: 0.8;
+}
+.place{
+
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+
+
+}
+.place:hover{
+    opacity: 0.8;
+}
+
+.icons {
+    display: flex;
+    gap: 15px;
+    margin-right: 197px;
+}
+
+.icons .icon{
+    width: 18px;
+    height: 18px;
+}
+.icon:hover{
+    opacity: 0.8;
+}
+
+/* media */
+@media (min-width: 769px) and (max-width: 1460px) {
+    /* Стили для ширины экрана от 769px до 1460px */
+
+  
+    .header .container {
+      max-width: 860px;
+      padding-left: calc(116px * 0.1); 
+      padding-right: calc(84px * 0.2); 
+      
+    }
+  
+    .header {
+      padding: 20px 0; 
+    }
+  
+    .header__nav a {
+      font-size: 24px; 
+      padding: 5px 5px; 
+    }
+  
+    .header__list {
+      gap: 15px; 
+    }
+
+
+    .food .container{
+        display: flex;
+        justify-content: center;
+    }
+
+    .nav_food {
+        width: 700px;
+    }
+
+    .food_link {
+        width: 140px;
+        height: 51px;
+        font-size: 26px;
+    }
+
+    .food_link + .food_link_1 {
+        width: 220px;
+    }
+
+    .nav_food1 {
+        width: 600px;
+    }
+
+    .food_menu {
+        max-width: 600px;
+    }
+
+    .food_items {
+        width: 600px;
+    }
+
+
+    .title_item {
+        width: 600px;
+        font-size: 32px;
+        margin-bottom: 24px;
+    }
+
+    .text_price {
+        width: 600px;
+        margin-bottom: 24px;
+    }
+
+    .text_item {
+        width: 510px;
+        font-size: 28px;
+    }
+
+    .price {
+        font-size: 28px;
+    }
+
+
+    .rectangle {
+        width: 100%;
+        max-width: 920px;
+        height: 100%;
+        margin-left: 70px;
+        margin-right: 60px;
+    }
+
+
+
+    footer{
+        height: 100%;
+    }
+    footer .container {
+        justify-content: space-between;
+    }
+
+    .tel, .place, .icons {
+        margin: 10px 0;
+    }
+
+    .tel {
+        margin-right: 0;
+    }
+
+    .icons {
+        margin-right: 0;
+    }
+
+    .icons .icon {
+        width: 14px;
+        height: 14px;
+    }
+
+    .tel, .place, .icons {
+        margin: 10px 0;
+    }
+
+    .tel {
+        margin-right: 0;
+    }
+
+    .icons {
+        margin-right: 0;
+    }
+
+    .icons .icon {
+        width: 14px;
+        height: 14px;
+    }
+
+  }
+@media (max-width: 768px) {
+    /* Стили для ширины экрана до 769px */
+  
+    .header .container {
+      flex-direction: column;
+      gap: 10px;
+      align-items: center;
+      padding: 0;
+    }
+    .header__list {
+      flex-direction: column;
+      text-align: center;
+      gap: 10px;
+    }
+    .header__logo {
+        max-width: 80%;
+        height: auto;
+    }
+    .logo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .food .container{
+        display: flex;
+        justify-content: center;
+    }
+
+
+    .nav_food, .nav_food1 {
+        width: 100%;
+        max-width: 320px;
+    }
+
+    .food_link {
+        width: 140px;
+        height: 51px;
+        font-size: 20px;
+    }
+
+    .food_link + .food_link_1 {
+        width: 200px;
+    }
+
+    .food_menu, .food_items {
+        max-width: 320px;
+    }
+
+    .rectangle {
+        width: calc(100% - 40px);
+        margin-left: 20px;
+        margin-right: 20px;
+        height: 100%;
+    }
+
+    .title_item {
+        width: 100%;
+        font-size: 24px;
+        margin-bottom: 16px;
+
+    }
+
+    .text_price {
+        width: 100%;
+        margin-bottom: 16px;
+        justify-content: space-between;
+    }
+
+    .text_item {
+        width: 100%;
+        font-size: 20px;
+    }
+
+    .price {
+        font-size: 20px;
+    }
+        
+
+    footer{
+        height: 100%;
+    }
+    footer .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .tel, .place, .icons {
+        margin: 10px 0;
+    }
+
+    .tel {
+        margin-right: 0;
+    }
+
+    .icons {
+        margin-right: 0;
+    }
+
+    .icons .icon {
+        width: 14px;
+        height: 14px;
+    }
+    
+  }

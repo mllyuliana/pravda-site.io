@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+a{
+    color:#ffffff;
+    text-decoration: none;
+}
+p{
+    margin: 0;
+}
+
+ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+img{
+    max-width: 100%;
+}
+
+.container{
+    max-width: 1060px;
+    margin: 0 auto;
+}
+
+.header {
+    padding-top: 32px;
+   
+}
+.header .container{
+
+    padding-left: 116px;
+    padding-right: 84px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__nav {
+
+}
+
+.header__nav a {
+    font-weight: 500;
+    font-size: 32px;
+    padding: 7px 7px;
+}
+
+.header__nav a:hover{
+    color: #4D7A77;
+}
+
+.header__list {
+    display: flex;
+    gap: 21px;
+}
+
+
+
+.header__logo:hover{
+    opacity: 0.8;
+}
+:root {
+	--dark: #070707;
+	--sizeindex: calc(1vw + 1vh);
+	--transition: .75s cubic-bezier(.2, .6, 0, 1);
+}
+
+body, html {
+	width: 100%;
+	height: 100%;
+	background-color: var(--dark);
+	color: #fff;
+    font-family: "Cormorant", serif;
+
+	overflow: hidden;
+	line-height: 1.8;
+}
+.slider {
+	height: 100%;
+	/* transform: rotate(15deg); */
+	overflow: visible;
+	top: 10vh;
+}
+.slier__wrapper {
+	transition: var(--transition)!important;
+	will-change: transform;
+}
+.slider__item {
+	max-height: 85vh;
+	overflow: hidden;
+	cursor: pointer;
+	transition: transform var(--transition), box-shadow var(--transition);
+}
+.slider__img {
+	width: 200%;
+	height: 80%;
+	background-size: cover;
+
+	position: absolute;
+	left: -50%;
+	transition: var(--transition)!important;
+	will-change: transform;
+    background-position: center; 
+	/* object-position: 20% 20%;  */
+}
+.slider_bg {
+	z-index: 0;
+	transform: rotate(-10deg)!important;
+	top: -90vh;
+	left: -10vh;
+	opacity: .15;
+	filter: blur(120px) saturate(10);
+}
+.slider_bg .slider__item {
+	max-height: 100vh;
+}
+.slider__item.opened {
+	z-index: 2;
+	transform: scale(1.5);
+	box-shadow: rgb(0 0 0 / .75) 0 0 0 10000px;
+}
+.description {
+	position: absolute;
+	font-size: calc(var(--sizeindex) * .8);
+	top: 20vh;
+	left: 8vw;
+	max-width: 24vw;
+	transition: opacity var(--transition), transform var(--transition);
+}
+.short_desc{
+    margin-top: 60px;
+    font-weight: 500;
+    font-size: 32px;
+}
+.description p {
+	opacity: .9;
+	transition: transform var(--transition);
+	transition-duration: 3s;
+}
+.description.hidden {
+	opacity: 0;
+	transform: translateY(5vh);
+}
+.description.hidden p {
+	transform: translateY(2vh);
+}
+
+
+
+
+
